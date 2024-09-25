@@ -1,0 +1,14 @@
+
+
+module foxglove
+{
+    @appendable
+    struct Inner {
+      uint32 a;
+    };
+    @appendable
+    struct Outer {
+      sequence<Inner> inners;
+    };
+};
+
